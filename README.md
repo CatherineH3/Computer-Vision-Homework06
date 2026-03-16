@@ -15,3 +15,8 @@ Next, I select the corners of the image:
 I then get a warped image with many missing points:
 
 <img width="896" height="368" alt="image" src="https://github.com/user-attachments/assets/d234d0fc-8333-4b7c-82d0-b453cb2c81d3" />
+
+
+After applying inverse warping, this is the final result:
+
+<img width="899" height="369" alt="image" src="https://github.com/user-attachments/assets/23b3ac13-65d9-4a4b-ae07-b21e5bd086fb" />
