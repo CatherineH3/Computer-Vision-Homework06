@@ -20,3 +20,10 @@ I then get a warped image with many missing points:
 After applying inverse warping, this is the final result:
 
 <img width="899" height="369" alt="image" src="https://github.com/user-attachments/assets/23b3ac13-65d9-4a4b-ae07-b21e5bd086fb" />
+
+
+Please note:
+I had to modify the dimensions of the display code because it was too large to fit properly on my computer screen.
+
+Reflections:
+Through this exercise, I learned about inverse warping and how it’s different from the usual forward mapping. In the original code, we were looping through the source image and putting pixels into the output, but this sometimes left gaps because some output pixels never got a value. This made the image have a bunch of weird lines and missing spots. To fix it, I switched things around and looped over each pixel in the output image, figuring out exactly where it came from in the original image. This “inverse mapping” makes sure every pixel in the transformed image gets a value, so there are no holes or missing lines. I only had to change a few lines: the loops now go over the output pixels, and each output pixel is assigned a color from its corresponding spot in the source image. Doing this made the warped image complete and gave me a better understanding of how pixel mapping works in image transformations. Overall, this exercise helped me see why the order of looping and the direction of mapping really matters when working with images.
