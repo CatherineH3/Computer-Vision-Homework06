@@ -1,6 +1,7 @@
 # Computer-Vision-Homework06
 Homework06 Submission for Computer Vision
 
+*Catherine Healy*
 
 Here is the original image:
 
